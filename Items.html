@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing Items</title>
+    <link rel="stylesheet" href="Items.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Missing Items</h1>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="search-report">
+            <form class="search-bar">
+                <input type="text" placeholder="Search for lost Items......" aria-label="Search">
+                <button type="submit">Search</button>
+            </form>
+            <button class="report-btn" onclick="scrollToForm()">Report a Missing item</button>
+        </section>
+
+        
+        <section class="intro-section">
+            <h1>Lost Items Gallery</h1>
+            <p>Explore our gallery of missing items. Together, we can help people find their lost items</p>
+        </section>
+
+        
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="money (1).jpg" alt="item 1">
+                <div class="info">
+                    <h3>Missing Car Keys</h3>
+                    <p>Missing since: March 2023</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="keys.jpg" alt="item 2">
+                <div class="info">
+                    <h3>One Million Dollars</h3>
+                    <p>Missing since: April 2024</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="pagination">
+            <a href="#" class="prev">&#171; Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#" class="next">Next &#187;</a>
+        </div>
+
+    
+        <section id="report-form">
+            <h2>Report a Missing Item </h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter full name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter age" required>
+
+                <label for="last-seen">Last Seen Location:</label>
+                <input type="text" id="last-seen" name="last-seen" placeholder="Enter location" required>
+
+                <label for="date">Date Last Seen:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Find Me Now. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToForm() {
+            document.getElementById('report-form').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <style>
+        
+        @font-face {
+            font-family: 'BlackChancery';
+            src: url('/CrystalUniverse-Regular.otf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'PlacidPark';
+            src: url('/carolingia.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'ScriptCornet';
+            src: url('/Mom«t___.ttf') format('truetype');
+        }
+        @font-face{
+            font-family: 'Armetha';
+            src: url(/Signature\ December.otf);
+        }
+        @font-face{
+            font-family: 'Courier New', Courier, monospace;
+            src: url(/Letters\ for\ Learners\ Lined\ Dots.ttf);
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+    <link rel="stylesheet" href="Donate.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>DONATION</h1>
+        </div>
+    </header>
+
+    <section class="donation-section">
+        <div class="donation-card">
+            <h2>Support Our Mission</h2>
+            <p>Your contributions help us improve and expand our services.</p>
+            <form action="#" method="POST">
+                <label for="name">Name on Card</label>
+                <input type="text" id="name" name="name" required placeholder="Ahmad Muhd">
+
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" required placeholder="1234 5678 9012 3456">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="text" id="expiry-date" name="expiry-date" required placeholder="MM/YY">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" required placeholder="123">
+                    </div>
+                </div>
+
+                <label for="amount">Donation Amount</label>
+                <input type="number" id="amount" name="amount" required placeholder="Enter Amount in USD">
+
+                <button type="submit" class="btn-donate">Donate Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Find Me Now. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <style>
+        
+        @font-face {
+            font-family: 'BlackChancery';
+            src: url('/CrystalUniverse-Regular.otf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'PlacidPark';
+            src: url('/carolingia.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'ScriptCornet';
+            src: url('/Mom«t___.ttf') format('truetype');
+        }
+        @font-face{
+            font-family: 'Armetha';
+            src: url(/Signature\ December.otf);
+        }
+        @font-face{
+            font-family: 'Courier New', Courier, monospace;
+            src: url(/Letters\ for\ Learners\ Lined\ Dots.ttf);
+        }
+    </style>
+</body>
+</html>

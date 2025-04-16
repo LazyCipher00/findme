@@ -1,0 +1,111 @@
+/* General Reset and Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+  }
+  
+  /* Header Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8a9b0f;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  nav a.active {
+    border-bottom: 2px solid yellow;
+  }
+  
+  /* Background Section with Color Blend */
+  .background-section {
+    background: linear-gradient(to bottom, #8a9b0f 30%, #c7d354 100%);
+    padding: 50px 20px;
+  }
+  
+  /* Hero Card Section */
+  .hero-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 36px;
+    color: #c7d354;
+  }
+  
+  .hero-content h2 {
+    font-size: 48px;
+    color: #333;
+  }
+  
+  .hero-content p {
+    margin: 20px 0;
+    color: #555;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .read-more, .contact-us {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  .read-more {
+    background-color: #c7d354;
+    color: white;
+  }
+  
+  .contact-us {
+    background-color: white;
+    border: 2px solid #c7d354;
+    color: #c7d354;
+  }
+  
+  .hero-image img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+
+header .logo h1 {
+    font-size: 1.8em;
+    color: #ffffff;
+    font-family: 'BlackChancery';
+}
+
+.donation-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #333;
+    padding: 40px;
+}
+
+.donation-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(213, 241, 85, 0.5);
+    text-align: center;
+}
+
+.donation-card h2 {
+    font-size: 1.8em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+    font-family: 'ScriptCornet';
+}
+
+.donation-card p {
+    color: #cccccc;
+    margin-bottom: 20px;
+    font-family: 'PlacidPark';
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    text-align: left;
+    margin-top: 10px;
+    color: #cccccc;
+    font-size: 0.9em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1em;
+    background-color: #444;
+    color: white;
+}
+
+form .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+form .form-group {
+    flex: 1;
+}
+
+.btn-donate {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.btn-donate:hover {
+    background-color: #ffaa00;
+    transform: translateY(-3px);
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #cccccc;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #aaaaaa;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missing Pets</title>
+    <link rel="stylesheet" href="pets.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Missing Pets</h1>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="search-report">
+            <form class="search-bar">
+                <input type="text" placeholder="Search for lost pets here...." aria-label="Search">
+                <button type="submit">Search</button>
+            </form>
+            <button class="report-btn" onclick="scrollToForm()">Report a Missing Pet</button>
+        </section>
+
+        
+        <section class="intro-section">
+            <h1>Lost Pets here</h1>
+            <p>Explore our gallery of missing pets. Together, we can reunite pets with their loved owners.</p>
+        </section>
+
+        
+        <section class="gallery">
+            <div class="gallery-item">
+                <img src="cats.jpg" alt="Pet 1">
+                <div class="info">
+                    <h3>A Missing Cat</h3>
+                    <p>Missing since: July, 2022</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="dogs.jpg" alt="Pet 2">
+                <div class="info">
+                    <h3> A missing Doberman Pinscher</h3>
+                    <p>Missing since: December 2022</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <div class="pagination">
+            <a href="#" class="prev">&#171; Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#" class="next">Next &#187;</a>
+        </div>
+
+        
+        <section id="report-form">
+            <h2>Report a Missing Pet here</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter full name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter age" required>
+
+                <label for="last-seen">Last Seen Location:</label>
+                <input type="text" id="last-seen" name="last-seen" placeholder="Enter location" required>
+
+                <label for="date">Date Last Seen:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+
+                <button type="submit">Submit Report</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Find Me Now. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToForm() {
+            document.getElementById('report-form').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <style>
+        
+        @font-face {
+            font-family: 'BlackChancery';
+            src: url('/CrystalUniverse-Regular.otf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'PlacidPark';
+            src: url('/carolingia.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'ScriptCornet';
+            src: url('/Mom«t___.ttf') format('truetype');
+        }
+        @font-face{
+            font-family: 'Armetha';
+            src: url(/Signature\ December.otf);
+        }
+        @font-face{
+            font-family: 'Courier New', Courier, monospace;
+            src: url(/Letters\ for\ Learners\ Lined\ Dots.ttf);
+        }
+    </style>
+</body>
+</html>
